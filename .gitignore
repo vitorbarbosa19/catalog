@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+.vscode
+debug.log
+coverage
+coverage
+credentialsDev.js
+credentialsProd.js
+aliases.json

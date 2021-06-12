@@ -1,0 +1,38 @@
+export const container = isLoading => ({
+  display: 'grid',
+  gridTemplateColumns: isLoading ? '1fr' : '1fr 1fr',
+  gridRowGap: '4px',
+  gridColumnGap: '4px',
+  maxWidth: '500px',
+}),
+  image = (windowWidth, url) => ({
+    display: 'grid',
+    alignItems: 'end',
+    justifyItems: 'center',
+    background: `url('${url}') center / cover`,
+    height:
+      windowWidth >= 500 ? '420px' : `${windowWidth / 2 / 0.6}px`,
+    borderRadius: '3px',
+    boxShadow: 'rgba(34, 34, 34, 0.3) 0px 5px 15px -4px',
+  }),
+  label = windowWidth => ({
+    display: 'grid',
+    alignItems: 'center',
+    width: '100%',
+    height: windowWidth < 500 ? '12%' : '10%',
+    fontFamily: 'Rubik',
+    fontSize: windowWidth < 500 ? '1.5rem' : '1.8rem',
+    fontWeight: '600',
+    color: 'white',
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    background: 'rgba(34,34,34,0.9)',
+    boxShadow: 'rgba(34, 34, 34, 0.3) 0px -5px 15px -1px',
+  }),
+  filterEmpty = {
+    padding: '0 20px',
+    textAlign: 'center',
+  };

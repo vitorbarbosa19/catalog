@@ -1,0 +1,6 @@
+{
+    "hooks": {
+        "pre-commit": "npm run test && npm --no-git-tag-version version patch && node ./clearTsConfig.js &&  git add package.json package-lock.json tsconfig.json",
+        "pre-push": "npm run test:ci"
+    }
+}

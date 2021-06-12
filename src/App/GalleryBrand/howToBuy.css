@@ -1,0 +1,6 @@
+
+li {
+  font-size: 1.3rem!important;
+  list-style: square inside none !important;
+  margin: 0 0 4px 0;
+}
